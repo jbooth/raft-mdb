@@ -117,7 +117,7 @@ func (m *MDBStore) startTxn(readonly bool, open ...string) (*mdb.Txn, []mdb.DBI,
 
 	var dbs []mdb.DBI
 	for _, name := range open {
-		dbi, err := tx.DBIOpen(name, dbFlags)
+		dbi, err := tx.DBIOpen(&name, dbFlags)
 		if err != nil {
 			tx.Abort()
 			return nil, nil, err
