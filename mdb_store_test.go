@@ -2,7 +2,7 @@ package raftmdb
 
 import (
 	"bytes"
-	"github.com/hashicorp/raft"
+	"github.com/jbooth/raft"
 	"io/ioutil"
 	"os"
 	"testing"

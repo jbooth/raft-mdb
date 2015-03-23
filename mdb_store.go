@@ -2,8 +2,8 @@ package raftmdb
 
 import (
 	"fmt"
-	"github.com/hashicorp/raft"
 	"github.com/jbooth/gomdb"
+	"github.com/jbooth/raft"
 	"os"
 	"path/filepath"
 )
